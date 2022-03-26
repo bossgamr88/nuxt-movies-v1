@@ -114,6 +114,24 @@
 <script>
 import axios from "axios";
 export default {
+  head(){
+    return{
+      title:'The Movie Database',
+      meta:[
+        {
+          charset:'utf-8'
+        },
+        {
+          name:'viewport', content:'width=device-width, height=device-height,initial-scale=1'
+        },
+        {
+          hid:'description',
+          name:'description',
+          content:'Get all Move App'
+        }
+      ]
+    }
+  },
   data() {
     return {
       movies: [],
